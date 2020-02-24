@@ -7,15 +7,7 @@ const { WebhookClient } = require('dialogflow-fulfillment');
 const { Card, Suggestion } = require('dialogflow-fulfillment');
 const admin = require('firebase-admin');
 // Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyA7qI44AX-tpcSWGOPL2BTNkHpMcETB9eI",
-    authDomain: "ma-c4m.firebaseapp.com",
-    databaseURL: "https://ma-c4m.firebaseio.com",
-    projectId: "ma-c4m",
-    storageBucket: "ma-c4m.appspot.com",
-    messagingSenderId: "25680144148",
-    appId: "1:25680144148:web:8f557a89bc9df68cc6c401"
-};
+
 admin.initializeApp(firebaseConfig);
 var database = admin.database();
 
